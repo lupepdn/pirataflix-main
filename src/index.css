@@ -1,7 +1,3 @@
-:root {
-  --bs-light-red-rgb: 255, 150, 150; /* vermelho clarinho */
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,8 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --bs-dark-rgb: 240, 240, 240; /* fundo clarinho */
+
+  /* Cinza escuro suave */
+  --bs-dark-rgb: 52, 58, 64;
   background-color: rgba(var(--bs-dark-rgb)) !important;
+  color: #f8f9fa; /* texto claro para contraste */
 }
 
 code {
@@ -20,12 +19,4 @@ code {
 
 .main-content {
   padding-bottom: 55px;
-}
-
-/* Exemplo usando o vermelho claro */
-.alert {
-  background-color: rgba(var(--bs-light-red-rgb), 0.3); /* vermelho clarinho com transparência */
-  color: rgb(150, 0, 0); /* texto vermelho escuro para contraste */
-  padding: 10px;
-  border-radius: 5px;
 }
